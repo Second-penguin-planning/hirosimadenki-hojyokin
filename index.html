@@ -1,10 +1,1694 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>テストサイト</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>広島電気興業株式会社 | 産業用蓄電池・自家消費型太陽光のスペシャリスト</title>
+    <meta name="description" content="広島県で産業用蓄電池・自家消費型太陽光発電なら創業69年の広島電気興業。BCP対策・電気代削減・補助金申請まで一貫サポート。無料シミュレーション受付中。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --brand-blue: #002244;
+            --brand-orange: #f59e0b;
+        }
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        .section-title::after {
+            content: ""; display: block; width: 60px; height: 4px; background: var(--brand-orange); margin: 15px auto; border-radius: 2px;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 34, 68, 0.8), rgba(0, 34, 68, 0.6)), url('images/factory_solar.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: var(--brand-orange) !important;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+        }
+    </style>
 </head>
-<body>
-  <h1>成功！サイト表示できています</h1>
+<body class="text-gray-800 bg-white">
+
+    <header class="fixed w-full z-50 bg-white/95 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="images/logo.png" alt="広島電気興業 ロゴ" class="h-10 md:h-12 w-auto">
+                <div class="flex flex-col">
+                    <span class="text-[10px] text-blue-900 font-bold tracking-[0.2em] leading-none mb-1 uppercase">Since 1957 Hiroshima</span>
+                    <span class="text-lg md:text-xl font-black leading-none tracking-tighter" style="color: var(--brand-blue);">
+                        広島電気興業<span class="text-sm font-bold ml-0.5">株式会社</span>
+                    </span>
+                </div>
+            </div>
+
+            <nav class="hidden lg:flex items-center space-x-6 text-sm font-bold" style="color: var(--brand-blue);">
+                <a href="#b2b-features" class="hover:text-orange-500 transition">蓄電池とは</a>
+                <a href="#service-flow" class="hover:text-orange-500 transition">導入の流れ</a>
+                <a href="#vision" class="hover:text-orange-500 transition">当社の強み</a>
+                <a href="#company" class="hover:text-orange-500 transition">会社概要</a>
+                <a href="#contact" class="bg-orange-500 text-white px-6 py-2.5 rounded-lg hover:bg-orange-600 transition shadow-md">無料シミュレーション</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center hero-gradient pt-20">
+        <div class="container mx-auto px-6 text-white">
+            <div class="max-w-3xl">
+                <div class="inline-block bg-orange-500 text-white text-xs px-4 py-1.5 rounded-full mb-6 tracking-widest font-bold shadow-lg uppercase">
+                    広島県内の法人・工場・ビルオーナー様へ
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black leading-tight mb-8">
+                    夜間電力を「蓄電池」でお得にする。<br>
+                    <span class="text-orange-400">BCP対策と経費削減</span>を<br class="hidden md:block">同時実現。
+                </h1>
+                <p class="text-lg md:text-xl mb-10 text-blue-50 leading-relaxed font-medium">
+                    創業69年・広島県内施工実績多数。一級電気施工管理技士が、<br class="hidden md:block">
+                    御社の電力使用状況を分析し、最適な蓄電池トータルプランをご提案。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="px-12 py-5 bg-orange-500 text-white rounded-xl shadow-2xl font-bold text-xl hover:bg-orange-600 transition text-center">
+                        60秒かんたん無料シミュレーション
+                    </a>
+                    <a href="#b2b-features" class="px-12 py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl font-bold text-xl hover:bg-white/20 transition text-center">
+                        導入メリットを見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-950 mb-4">このような経営課題を解決します</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-900 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">夜間電力を賢く利用したい</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">安い夜間電力を蓄電し、昼間に使用することで電気代を大幅に削減。コストダウンによる競争力強化につながります。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-900 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">災害時の事業継続が不安</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">停電時でも製造ラインやサーバー、照明などの重要設備を稼働。地域インフラとしての信頼を守ります。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-900 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">脱炭素経営・RE100対応</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">太陽光発電と組み合わせ、クリーンエネルギーの自家消費率を最大化。企業価値の向上に直結します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="b2b-features" class="py-24">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-950 section-title">法人用蓄電池 導入の3大メリット</h2>
+                <p class="text-gray-500 mt-4">蓄電池は「いざという時」だけでなく「毎日」稼ぐ設備です</p>
+            </div>
+
+            <div class="space-y-24">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="images/peakcut_graph.jpg" alt="ピークカット図解" class="rounded-3xl shadow-2xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <span class="text-orange-500 font-black text-6xl opacity-20 block mb-2">01</span>
+                        <h3 class="text-2xl font-bold text-blue-900 mb-6">基本料金の削減（ピークカット）</h3>
+                        <p class="text-gray-700 leading-loose mb-6">
+                            法人の電気料金は、過去1年間の最大需要電力（デマンド値）で決まります。夜間の安い電力を蓄電池に蓄え、昼間のピークに使用することで、デマンド値を抑制し、<strong>年間数十万円から数百万円の基本料金削減</strong>が可能です。
+                        </p>
+                        <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-900">
+                            <p class="text-sm font-bold text-blue-900">削減効果の一例</p>
+                            <p class="text-gray-600 text-sm italic">※契約電力200kWの工場で、夜間電力を使用しつつピークを15%削減した場合、年間約40万円の削減（概算）</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="images/bcp_operation.jpg" alt="BCP対策" class="rounded-3xl shadow-2xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <span class="text-orange-500 font-black text-6xl opacity-20 block mb-2">02</span>
+                        <h3 class="text-2xl font-bold text-blue-900 mb-6">企業の信頼を守るBCP対策</h3>
+                        <p class="text-gray-700 leading-loose mb-6">
+                            災害時、電気が止まることは事業の停止、さらには信用の喪失に直結します。産業用蓄電池を導入することで、停電後わずか数秒で自立運転に切り替わり、必要な電力を確保。地域住民への避難場所提供など、地域貢献にも活用できます。
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-sm font-bold text-gray-700">
+                                <span class="text-green-500">✔</span> 重要設備の24時間稼働
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-bold text-gray-700">
+                                <span class="text-green-500">✔</span> 通信機器・サーバーの保護
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="subsidy" class="py-24 bg-gray-50">
+    <div class="container mx-auto px-6 max-w-5xl">
+        <h2 class="text-3xl font-bold text-center mb-16 text-blue-900 section-title">広島県の補助金制度について</h2>
+        <p class="text-gray-700 text-lg mb-10 leading-relaxed text-center">
+            蓄電池の導入をお考えの皆様へ、広島県では、企業の電力コスト削減とBCP対策の一環として、以下のような補助金制度を提供しています。
+        </p>
+        <div class="space-y-6">
+            <div class="bg-white rounded-lg shadow-md p-6 border border-gray-200">
+                <h3 class="text-xl font-bold text-blue-900">広島県産業用蓄電池導入補助金</h3>
+                <p class="text-gray-600 mt-2">
+                    補助金の対象となる設備や、最大補助金額、申請対象となる事業者の条件は以下の通りです。
+                </p>
+                <ul class="list-disc ml-6 mt-4 space-y-2">
+                    <li>対象設備: 産業用蓄電池システム</li>
+                    <li>最大補助金額: 1,000万円（補助率は事業規模や条件によります）</li>
+                    <li>申請対象: 広島県内に事業所を有する法人、個人事業主</li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 border border-gray-200">
+                <h3 class="text-xl font-bold text-blue-900">申請手順</h3>
+                <ol class="list-decimal ml-6 mt-4 space-y-2">
+                    <li>【事前相談】専門家による無料相談で、申請書類や必要設備を確認します。</li>
+                    <li>【必要書類の準備】電気使用明細書、計画書などの必要書類を準備します。</li>
+                    <li>【申請書の提出】広島県の指定の時間内に申請書類を提出します。</li>
+                    <li>【審査】提出した書類に基づいて、広島県の審査が行われます。</li>
+                    <li>【交付決定】審査に通過すると交付決定通知が届き、設備の導入を行います。</li>
+                </ol>
+                <p class="text-gray-600 mt-4">当社では、申請手続きのサポートも行っており、お客様のお手間を軽減します。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="service-flow" class="py-24 bg-blue-950 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">導入までの5ステップ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+                <div class="relative p-6 bg-white/5 rounded-2xl border border-white/10 text-center">
+                    <div class="text-orange-400 font-bold mb-2">STEP 01</div>
+                    <h4 class="font-bold mb-4">電力分析・診断</h4>
+                    <p class="text-xs text-blue-100">過去の電力使用データを基に、最適な蓄電池容量をシミュレーションします。</p>
+                </div>
+                <div class="relative p-6 bg-white/5 rounded-2xl border border-white/10 text-center">
+                    <div class="text-orange-400 font-bold mb-2">STEP 02</div>
+                    <h4 class="font-bold mb-4">補助金申請代行</h4>
+                    <p class="text-xs text-blue-100">国や広島県の複雑な補助金申請を、経験豊富なスタッフが完全サポート。</p>
+                </div>
+                <div class="relative p-6 bg-white/5 rounded-2xl border border-white/10 text-center">
+                    <div class="text-orange-400 font-bold mb-2">STEP 03</div>
+                    <h4 class="font-bold mb-4">機材調達・設計</h4>
+                    <p class="text-xs text-blue-100">国内・海外の一流メーカーから、用途に合わせた最適な機材を選定します。</p>
+                </div>
+                <div class="relative p-6 bg-white/5 rounded-2xl border border-white/10 text-center">
+                    <div class="text-orange-400 font-bold mb-2">STEP 04</div>
+                    <h4 class="font-bold mb-4">自社施工</h4>
+                    <p class="text-xs text-blue-100">下請け任せにせず、自社の一級技術者が責任を持って安全に設置工事を行います。</p>
+                </div>
+                <div class="relative p-6 bg-white/5 rounded-2xl border border-white/10 text-center">
+                    <div class="text-orange-400 font-bold mb-2">STEP 05</div>
+                    <h4 class="font-bold mb-4">保守・点検</h4>
+                    <p class="text-xs text-blue-100">稼働後のトラブルにも迅速に対応。長期的な資産価値を維持します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ============================================
+     補助金完全ガイドセクション
+     ============================================ -->
+<section id="subsidy" class="py-24 bg-gradient-to-b from-gray-50 to-white">
+  <div class="container mx-auto px-6 max-w-6xl">
+
+    <!-- セクションヘッダー -->
+    <div class="text-center mb-16">
+      <span class="inline-block bg-yellow-100 text-yellow-700 font-bold px-4 py-2 rounded-full text-sm mb-4">
+        💰 最大数千万円の支援が受けられます
+      </span>
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+        中国・四国地方<br class="md:hidden">蓄電池補助金 完全ガイド
+      </h2>
+      <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+        国・県・市町村の補助金を<strong class="text-blue-700">最大限に組み合わせる</strong>ことで、
+        導入コストを大幅に削減できます。広島電気では補助金申請から採択まで、
+        すべてのステップをワンストップでサポートします。
+      </p>
+      <!-- 重要警告バナー -->
+      <div class="mt-8 bg-red-50 border-l-4 border-red-500 rounded-r-lg p-4 text-left max-w-2xl mx-auto">
+        <p class="text-red-700 font-bold text-sm">
+          ⚠️ 重要：補助金には申請期限・予算上限があります
+        </p>
+        <p class="text-red-600 text-sm mt-1">
+          多くの補助金は予算に達し次第、受付終了となります。
+          お早めにご相談ください。
+        </p>
+      </div>
+    </div>
+
+    <!-- タブナビゲーション -->
+    <div class="flex flex-wrap justify-center gap-2 mb-12" id="subsidyTabs">
+      <button onclick="showTab('national')"
+        class="tab-btn active-tab px-5 py-3 rounded-full font-bold text-sm transition-all"
+        id="tab-national">
+        🏛️ 国の補助金
+      </button>
+      <button onclick="showTab('hiroshima')"
+        class="tab-btn px-5 py-3 rounded-full font-bold text-sm transition-all"
+        id="tab-hiroshima">
+        🏯 広島県
+      </button>
+      <button onclick="showTab('okayama')"
+        class="tab-btn px-5 py-3 rounded-full font-bold text-sm transition-all"
+        id="tab-okayama">
+        🍑 岡山県
+      </button>
+      <button onclick="showTab('yamaguchi')"
+        class="tab-btn px-5 py-3 rounded-full font-bold text-sm transition-all"
+        id="tab-yamaguchi">
+        🐡 山口県
+      </button>
+      <button onclick="showTab('shimane')"
+        class="tab-btn px-5 py-3 rounded-full font-bold text-sm transition-all"
+        id="tab-shimane">
+        ⛩️ 島根県
+      </button>
+      <button onclick="showTab('tottori')"
+        class="tab-btn px-5 py-3 rounded-full font-bold text-sm transition-all"
+        id="tab-tottori">
+        🦀 鳥取県
+      </button>
+      <button onclick="showTab('shikoku')"
+        class="tab-btn px-5 py-3 rounded-full font-bold text-sm transition-all"
+        id="tab-shikoku">
+        🍊 四国4県
+      </button>
+      <button onclick="showTab('city')"
+        class="tab-btn px-5 py-3 rounded-full font-bold text-sm transition-all"
+        id="tab-city">
+        🏙️ 市町村
+      </button>
+    </div>
+
+    <!-- ============ 国の補助金タブ ============ -->
+    <div id="tab-content-national" class="tab-content">
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- 省エネ補助金 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-blue-700 text-white px-6 py-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-lg">省エネルギー投資促進支援事業費補助金</h3>
+              <span class="bg-white text-blue-700 text-xs font-bold px-3 py-1 rounded-full">経産省</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-blue-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-blue-700">1/3〜1/2</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">15億円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象設備：</strong>蓄電池を含む省エネ設備全般</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象事業者：</strong>工場・事業場を有する法人・個人事業主</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>要件：</strong>省エネ効果5%以上が必要</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>公募時期：</strong>例年2〜3月頃（毎年変動）</span>
+              </div>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+              <p class="text-xs text-yellow-700 font-bold">💡 広島電気からのアドバイス</p>
+              <p class="text-xs text-yellow-600 mt-1">
+                蓄電池単体では申請が難しい場合も、太陽光発電との組み合わせや
+                空調・照明の省エネ改修と同時申請することで採択率が向上します。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DR補助金 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-indigo-700 text-white px-6 py-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-lg">需要家側エネルギーリソース活用事業補助金</h3>
+              <span class="bg-white text-indigo-700 text-xs font-bold px-3 py-1 rounded-full">経産省</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-indigo-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-indigo-700">1/3〜2/3</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">数億円規模</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-indigo-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>蓄電池・V2G・DR対応制御システム</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-indigo-500 font-bold mt-0.5">▶</span>
+                <span><strong>特徴：</strong>電力需給調整（DR）参加が条件</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-indigo-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象事業者：</strong>アグリゲーター事業者等と連携する法人</span>
+              </div>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+              <p class="text-xs text-yellow-700 font-bold">💡 活用ポイント</p>
+              <p class="text-xs text-yellow-600 mt-1">
+                蓄電池でDR（デマンドレスポンス）に参加することで
+                補助金取得後も継続的な収益が期待できます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 脱炭素補助金 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-green-700 text-white px-6 py-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-lg">脱炭素社会構築のための再エネ等<br>導入推進補助金</h3>
+              <span class="bg-white text-green-700 text-xs font-bold px-3 py-1 rounded-full">環境省</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-green-700">1/2〜2/3</p>
+              </div>
+              <div class="bg-blue-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-blue-700">10億円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-green-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>太陽光発電＋蓄電池のセット導入</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-green-500 font-bold mt-0.5">▶</span>
+                <span><strong>重点分野：</strong>離島・防災拠点・避難施設</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-green-500 font-bold mt-0.5">▶</span>
+                <span><strong>地方公共団体：</strong>補助率が最大2/3に優遇</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 中小企業省エネ -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-orange-600 text-white px-6 py-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-lg">中小企業等に向けた<br>省エネルギー診断拡充事業</h3>
+              <span class="bg-white text-orange-600 text-xs font-bold px-3 py-1 rounded-full">経産省</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-orange-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">診断費用</p>
+                <p class="text-2xl font-bold text-orange-700">無料</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">対象</p>
+                <p class="text-lg font-bold text-green-700">中小企業</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-orange-500 font-bold mt-0.5">▶</span>
+                <span>省エネ診断後の設備投資に補助金が優先採択される</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-orange-500 font-bold mt-0.5">▶</span>
+                <span>蓄電池導入の根拠資料として活用可能</span>
+              </div>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+              <p class="text-xs text-yellow-700 font-bold">💡 戦略的活用法</p>
+              <p class="text-xs text-yellow-600 mt-1">
+                まず無料診断を受けてから補助金申請をすると採択率がアップ。
+                広島電気では診断同行サービスも対応しています。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ものづくり補助金 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 md:col-span-2">
+          <div class="bg-red-700 text-white px-6 py-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-lg">ものづくり・商業・サービス生産性向上促進補助金（ものづくり補助金）</h3>
+              <span class="bg-white text-red-700 text-xs font-bold px-3 py-1 rounded-full">中小機構</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="grid md:grid-cols-4 gap-4 mb-4">
+              <div class="bg-red-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率（中小）</p>
+                <p class="text-2xl font-bold text-red-700">1/2</p>
+              </div>
+              <div class="bg-orange-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率（小規模）</p>
+                <p class="text-2xl font-bold text-orange-700">2/3</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額（通常）</p>
+                <p class="text-2xl font-bold text-green-700">1,250万円</p>
+              </div>
+              <div class="bg-blue-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額（大型）</p>
+                <p class="text-2xl font-bold text-blue-700">4,000万円</p>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+              <div class="space-y-2">
+                <div class="flex items-start gap-2">
+                  <span class="text-red-500 font-bold mt-0.5">▶</span>
+                  <span><strong>蓄電池の適用条件：</strong>生産プロセス改善・自動化との組み合わせで申請可能</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="text-red-500 font-bold mt-0.5">▶</span>
+                  <span><strong>付加価値額要件：</strong>年率3%以上の向上計画が必要</span>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div class="flex items-start gap-2">
+                  <span class="text-red-500 font-bold mt-0.5">▶</span>
+                  <span><strong>グリーン枠：</strong>温室効果ガス削減に取り組む事業者は優遇</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="text-red-500 font-bold mt-0.5">▶</span>
+                  <span><strong>公募：</strong>年複数回（第1〜18次と継続中）</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============ 広島県タブ ============ -->
+    <div id="tab-content-hiroshima" class="tab-content hidden">
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- 広島県再エネ補助金 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-red-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">広島県再生可能エネルギー等<br>導入推進事業補助金</h3>
+              <span class="bg-white text-red-700 text-xs font-bold px-3 py-1 rounded-full">広島県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-red-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-red-700">1/3以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">2,000万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-red-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>太陽光発電設備・蓄電池・熱利用設備</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-red-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象事業者：</strong>県内の中小企業者・農林漁業者等</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-red-500 font-bold mt-0.5">▶</span>
+                <span><strong>条件：</strong>自家消費型であること（売電目的不可）</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-red-500 font-bold mt-0.5">▶</span>
+                <span><strong>公募：</strong>例年6〜8月頃</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 広島県BCP補助金 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-orange-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">中小企業BCP策定・強化支援事業</h3>
+              <span class="bg-white text-orange-700 text-xs font-bold px-3 py-1 rounded-full">広島県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-orange-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-orange-700">1/2以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">500万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-orange-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>非常用電源（蓄電池・発電機）、防災設備</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-orange-500 font-bold mt-0.5">▶</span>
+                <span><strong>条件：</strong>BCP計画の策定・更新が必要</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-orange-500 font-bold mt-0.5">▶</span>
+                <span><strong>2018年豪雨：</strong>広島県は激甚災害指定実績あり、BCP補助に力を入れています</span>
+              </div>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+              <p class="text-xs text-yellow-700 font-bold">💡 広島電気の実績</p>
+              <p class="text-xs text-yellow-600 mt-1">
+                BCP申請では過去の西日本豪雨・土砂災害のリスク分析を
+                申請書に盛り込むことで採択率が大幅に向上します。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 広島市補助金 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-blue-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">広島市 中小企業者等<br>省エネルギー設備導入支援補助金</h3>
+              <span class="bg-white text-blue-700 text-xs font-bold px-3 py-1 rounded-full">広島市</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-blue-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-blue-700">1/3以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">100万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>省エネ設備（蓄電池・LED・空調等）</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>国・県補助金との併用：</strong>原則可能（要確認）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 福山市 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-purple-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">福山市 中小企業振興<br>設備投資促進補助金</h3>
+              <span class="bg-white text-purple-700 text-xs font-bold px-3 py-1 rounded-full">福山市</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-purple-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-purple-700">1/4以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">500万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-purple-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>省エネ・脱炭素に資する設備全般</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-purple-500 font-bold mt-0.5">▶</span>
+                <span><strong>特記：</strong>製造業・食品加工業向けに積極的</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 広島県ゼロカーボン -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 md:col-span-2">
+          <div class="bg-emerald-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">広島県ゼロカーボン社会実現推進事業（中小企業CO₂削減）</h3>
+              <span class="bg-white text-emerald-700 text-xs font-bold px-3 py-1 rounded-full">広島県</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+              <div class="bg-emerald-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-emerald-700">1/2以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">3,000万円</p>
+              </div>
+              <div class="bg-blue-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">CO₂削減要件</p>
+                <p class="text-xl font-bold text-blue-700">10%以上</p>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+              <div class="space-y-2">
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-500 font-bold mt-0.5">▶</span>
+                  <span><strong>対象：</strong>太陽光＋蓄電池による自家消費設備、EV充電設備</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-500 font-bold mt-0.5">▶</span>
+                  <span><strong>条件：</strong>RE100・SBT等の脱炭素目標設定が加点</span>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-500 font-bold mt-0.5">▶</span>
+                  <span><strong>取引先：</strong>Scope3対応のサプライチェーン脱炭素化にも活用可</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-500 font-bold mt-0.5">▶</span>
+                  <span><strong>2030年目標：</strong>広島県は2030年度CO₂46%削減を掲げており補助金が充実</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============ 岡山県タブ ============ -->
+    <div id="tab-content-okayama" class="tab-content hidden">
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-green-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">岡山県 中小企業再生可能<br>エネルギー等導入補助金</h3>
+              <span class="bg-white text-green-700 text-xs font-bold px-3 py-1 rounded-full">岡山県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-green-700">1/3以内</p>
+              </div>
+              <div class="bg-yellow-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-yellow-700">1,500万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-green-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>太陽光発電・蓄電池・バイオマス等</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-green-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象事業者：</strong>岡山県内に事業所を持つ中小企業者</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-green-500 font-bold mt-0.5">▶</span>
+                <span><strong>特記：</strong>倉敷市・岡山市は別途上乗せ補助あり</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-teal-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">岡山市 脱炭素社会推進<br>設備導入補助金</h3>
+              <span class="bg-white text-teal-700 text-xs font-bold px-3 py-1 rounded-full">岡山市</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-teal-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-teal-700">1/3以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">300万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-teal-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>産業用蓄電池、太陽光、LED等</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-teal-500 font-bold mt-0.5">▶</span>
+                <span><strong>加点：</strong>岡山市ゼロカーボン宣言企業は審査優遇</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-yellow-600 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">倉敷市 中小企業省エネ・<br>脱炭素化支援補助金</h3>
+              <span class="bg-white text-yellow-600 text-xs font-bold px-3 py-1 rounded-full">倉敷市</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-yellow-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-yellow-600">1/2以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">200万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-yellow-500 font-bold mt-0.5">▶</span>
+                <span>水島コンビナート周辺の工場が多く、産業用蓄電池への理解が深い</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-yellow-500 font-bold mt-0.5">▶</span>
+                <span>省エネ率10%以上で加点あり</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-red-600 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">岡山県 事業継続力強化<br>計画策定支援補助金</h3>
+              <span class="bg-white text-red-600 text-xs font-bold px-3 py-1 rounded-full">岡山県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-red-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-red-600">2/3以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">1,000万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-red-500 font-bold mt-0.5">▶</span>
+                <span><strong>条件：</strong>中小企業庁の事業継続力強化計画認定取得</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-red-500 font-bold mt-0.5">▶</span>
+                <span>蓄電池はBCP対策設備として認定されやすい</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============ 山口県タブ ============ -->
+    <div id="tab-content-yamaguchi" class="tab-content hidden">
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-blue-800 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">山口県 脱炭素社会実現<br>推進補助金</h3>
+              <span class="bg-white text-blue-800 text-xs font-bold px-3 py-1 rounded-full">山口県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-blue-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-blue-800">1/2以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">2,000万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>太陽光発電・蓄電池・EV等の脱炭素設備</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>特記：</strong>山口県は工業県のため、産業用蓄電池の採択実績が豊富</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>連携可能：</strong>国の省エネ補助金との組み合わせで大幅削減可能</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-cyan-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">山口市・下関市<br>省エネ設備導入補助金</h3>
+              <span class="bg-white text-cyan-700 text-xs font-bold px-3 py-1 rounded-full">各市</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-cyan-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-cyan-700">1/3〜1/2</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">各市100万円〜</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-cyan-500 font-bold mt-0.5">▶</span>
+                <span>山口市・宇部市・下関市・周南市それぞれで補助金を実施</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-cyan-500 font-bold mt-0.5">▶</span>
+                <span>県補助との組み合わせで実質負担を大幅に軽減可能</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 md:col-span-2">
+          <div class="bg-indigo-800 text-white px-6 py-4">
+            <h3 class="font-bold text-lg">山口県 中小企業BCP強化支援補助金</h3>
+          </div>
+          <div class="p-6">
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+              <div class="bg-indigo-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-indigo-800">2/3以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">1,500万円</p>
+              </div>
+              <div class="bg-yellow-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">BCP計画</p>
+                <p class="text-lg font-bold text-yellow-700">策定支援付き</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-600">
+              山口県は豪雨・台風リスクが高く、BCP観点での蓄電池補助金に力を入れています。
+              中小企業庁の「事業継続力強化計画」認定と組み合わせることで補助率が最大化されます。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============ 島根県タブ ============ -->
+    <div id="tab-content-shimane" class="tab-content hidden">
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-red-800 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">島根県 再生可能エネルギー<br>等導入補助金</h3>
+              <span class="bg-white text-red-800 text-xs font-bold px-3 py-1 rounded-full">島根県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-red-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-red-800">1/3以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">1,000万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-red-500 font-bold mt-0.5">▶</span>
+                <span><strong>特記：</strong>中山間地域・離島での蓄電池導入に加算あり</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-red-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>太陽光発電・蓄電池・小型風力発電</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-red-500 font-bold mt-0.5">▶</span>
+                <span>島根県は電力自給率向上を重要政策として掲げている</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-green-800 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">松江市・出雲市<br>省エネ・脱炭素補助金</h3>
+              <span class="bg-white text-green-800 text-xs font-bold px-3 py-1 rounded-full">各市</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-green-800">1/3〜1/2</p>
+              </div>
+              <div class="bg-yellow-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-yellow-700">各市50〜200万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-green-500 font-bold mt-0.5">▶</span>
+                <span>松江市・出雲市・浜田市それぞれで蓄電池補助を実施</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============ 鳥取県タブ ============ -->
+    <div id="tab-content-tottori" class="tab-content hidden">
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-blue-600 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">鳥取県 カーボンニュートラル<br>推進補助金</h3>
+              <span class="bg-white text-blue-600 text-xs font-bold px-3 py-1 rounded-full">鳥取県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-blue-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-blue-600">1/2以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">2,000万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>特記：</strong>鳥取県は全国でも先進的な再エネ普及政策を実施</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>蓄電池・太陽光・EV・バイオマス</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-blue-500 font-bold mt-0.5">▶</span>
+                <span>鳥取市・米子市でも上乗せ補助金あり</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-orange-600 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">鳥取県 中小企業<br>防災・BCP推進補助金</h3>
+              <span class="bg-white text-orange-600 text-xs font-bold px-3 py-1 rounded-full">鳥取県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-orange-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-orange-600">2/3以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">800万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-orange-500 font-bold mt-0.5">▶</span>
+                <span>鳥取県西部地震（2000年）の経験からBCP対策補助に注力</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-orange-500 font-bold mt-0.5">▶</span>
+                <span>蓄電池は非常用電源として高い評価を受ける</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============ 四国4県タブ ============ -->
+    <div id="tab-content-shikoku" class="tab-content hidden">
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- 愛媛県 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-orange-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">愛媛県 脱炭素社会実現<br>加速化推進補助金</h3>
+              <span class="bg-white text-orange-700 text-xs font-bold px-3 py-1 rounded-full">愛媛県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-orange-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-orange-700">1/3〜1/2</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">2,000万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-orange-500 font-bold mt-0.5">▶</span>
+                <span><strong>対象：</strong>産業用蓄電池・太陽光・省エネ設備</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-orange-500 font-bold mt-0.5">▶</span>
+                <span><strong>特記：</strong>南海トラフ地震対策として防災型蓄電池に加算</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-orange-500 font-bold mt-0.5">▶</span>
+                <span>松山市・今治市で市独自の上乗せ補助あり</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 香川県 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-teal-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">香川県 再生可能エネルギー<br>等導入促進補助金</h3>
+              <span class="bg-white text-teal-700 text-xs font-bold px-3 py-1 rounded-full">香川県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-teal-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-teal-700">1/3以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">1,500万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-teal-500 font-bold mt-0.5">▶</span>
+                <span><strong>特記：</strong>香川県は日照時間が全国トップクラス。太陽光＋蓄電池に最適</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-teal-500 font-bold mt-0.5">▶</span>
+                <span>高松市・丸亀市独自補助との併用で実質負担減</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 高知県 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-green-800 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">高知県 地産地消型<br>再生可能エネルギー面的活用補助金</h3>
+              <span class="bg-white text-green-800 text-xs font-bold px-3 py-1 rounded-full">高知県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-green-800">1/2以内</p>
+              </div>
+              <div class="bg-blue-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-blue-700">3,000万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-green-500 font-bold mt-0.5">▶</span>
+                <span><strong>特記：</strong>高知県は南海トラフ巨大地震の想定被害が大きく、蓄電池補助率が全国でも高い</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-green-500 font-bold mt-0.5">▶</span>
+                <span>農業用・水産業用の特別枠も設置</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-green-500 font-bold mt-0.5">▶</span>
+                <span>高知市・南国市で追加補助あり</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 徳島県 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="bg-indigo-700 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">徳島県 脱炭素経営<br>促進補助金</h3>
+              <span class="bg-white text-indigo-700 text-xs font-bold px-3 py-1 rounded-full">徳島県</span>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-indigo-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">補助率</p>
+                <p class="text-2xl font-bold text-indigo-700">1/2以内</p>
+              </div>
+              <div class="bg-green-50 rounded-lg p-3 text-center">
+                <p class="text-xs text-gray-500 mb-1">上限額</p>
+                <p class="text-2xl font-bold text-green-700">1,000万円</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2">
+                <span class="text-indigo-500 font-bold mt-0.5">▶</span>
+                <span><strong>特記：</strong>徳島県は全国初のゼロカーボン宣言県として、補助制度が充実</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-indigo-500 font-bold mt-0.5">▶</span>
+                <span>徳島市・阿南市の工業地帯向け特別支援枠あり</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============ 市町村タブ ============ -->
+    <div id="tab-content-city" class="tab-content hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full bg-white rounded-2xl shadow-lg overflow-hidden text-sm">
+          <thead>
+            <tr class="bg-blue-900 text-white">
+              <th class="px-4 py-3 text-left">市町村</th>
+              <th class="px-4 py-3 text-left">補助金名称</th>
+              <th class="px-4 py-3 text-center">補助率</th>
+              <th class="px-4 py-3 text-center">上限額</th>
+              <th class="px-4 py-3 text-left">特記事項</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-blue-50 transition-colors">
+              <td class="px-4 py-3 font-bold text-blue-800">広島市</td>
+              <td class="px-4 py-3">中小企業省エネ設備導入支援</td>
+              <td class="px-4 py-3 text-center">1/3</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">100万円</td>
+              <td class="px-4 py-3 text-gray-600">県補助との併用可</td>
+            </tr>
+            <tr class="hover:bg-blue-50 transition-colors bg-gray-50">
+              <td class="px-4 py-3 font-bold text-blue-800">福山市</td>
+              <td class="px-4 py-3">中小企業振興設備投資促進</td>
+              <td class="px-4 py-3 text-center">1/4</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">500万円</td>
+              <td class="px-4 py-3 text-gray-600">製造業向け優遇あり</td>
+            </tr>
+            <tr class="hover:bg-blue-50 transition-colors">
+              <td class="px-4 py-3 font-bold text-blue-800">東広島市</td>
+              <td class="px-4 py-3">脱炭素・省エネ設備補助</td>
+              <td class="px-4 py-3 text-center">1/3</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">200万円</td>
+              <td class="px-4 py-3 text-gray-600">酒造・食品業に実績多数</td>
+            </tr>
+            <tr class="hover:bg-blue-50 transition-colors bg-gray-50">
+              <td class="px-4 py-3 font-bold text-blue-800">廿日市市</td>
+              <td class="px-4 py-3">省エネルギー設備導入補助</td>
+              <td class="px-4 py-3 text-center">1/3</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">100万円</td>
+              <td class="px-4 py-3 text-gray-600">木材加工業に適用実績あり</td>
+            </tr>
+            <tr class="hover:bg-blue-50 transition-colors">
+              <td class="px-4 py-3 font-bold text-blue-800">呉市</td>
+              <td class="px-4 py-3">中小企業BCP・省エネ設備補助</td>
+              <td class="px-4 py-3 text-center">1/2</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">300万円</td>
+              <td class="px-4 py-3 text-gray-600">造船・製造業向け特別枠あり</td>
+            </tr>
+            <tr class="hover:bg-blue-50 transition-colors bg-gray-50">
+              <td class="px-4 py-3 font-bold text-blue-800">岡山市</td>
+              <td class="px-4 py-3">脱炭素社会推進設備導入補助</td>
+              <td class="px-4 py-3 text-center">1/3</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">300万円</td>
+              <td class="px-4 py-3 text-gray-600">ゼロカーボン宣言企業は加点</td>
+            </tr>
+            <tr class="hover:bg-blue-50 transition-colors">
+              <td class="px-4 py-3 font-bold text-blue-800">倉敷市</td>
+              <td class="px-4 py-3">中小企業省エネ・脱炭素化支援</td>
+              <td class="px-4 py-3 text-center">1/2</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">200万円</td>
+              <td class="px-4 py-3 text-gray-600">コンビナート隣接工場に強み</td>
+            </tr>
+            <tr class="hover:bg-blue-50 transition-colors bg-gray-50">
+              <td class="px-4 py-3 font-bold text-blue-800">高松市</td>
+              <td class="px-4 py-3">中小企業等脱炭素設備導入補助</td>
+              <td class="px-4 py-3 text-center">1/3</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">100万円</td>
+              <td class="px-4 py-3 text-gray-600">香川県補助との積み上げ可</td>
+            </tr>
+            <tr class="hover:bg-blue-50 transition-colors">
+              <td class="px-4 py-3 font-bold text-blue-800">松山市</td>
+              <td class="px-4 py-3">省エネ・再エネ設備導入補助</td>
+              <td class="px-4 py-3 text-center">1/3</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">150万円</td>
+              <td class="px-4 py-3 text-gray-600">南海トラフ対策でBCP優遇</td>
+            </tr>
+            <tr class="hover:bg-blue-50 transition-colors bg-gray-50">
+              <td class="px-4 py-3 font-bold text-blue-800">高知市</td>
+              <td class="px-4 py-3">脱炭素化・BCP設備補助金</td>
+              <td class="px-4 py-3 text-center">1/2</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">500万円</td>
+              <td class="px-4 py-3 text-gray-600">津波対策として特別加算あり</td>
+            </tr>
+            <tr class="hover:bg-blue-50 transition-colors">
+              <td class="px-4 py-3 font-bold text-blue-800">徳島市</td>
+              <td class="px-4 py-3">ゼロカーボン事業者支援補助</td>
+              <td class="px-4 py-3 text-center">1/2</td>
+              <td class="px-4 py-3 text-center font-bold text-green-700">200万円</td>
+              <td class="px-4 py-3 text-gray-600">全国初のゼロカーボン宣言都市</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text-xs text-gray-500 mt-4 text-center">
+          ※ 上記は参考情報です。最新の補助金情報は各自治体の公式サイトまたは広島電気にお問い合わせください。
+        </p>
+      </div>
+    </div>
+
+    <!-- ============ 補助金シミュレーション ============ -->
+    <div class="mt-20 bg-gradient-to-r from-blue-900 to-indigo-900 rounded-3xl p-8 md:p-12 text-white">
+      <h3 class="text-2xl md:text-3xl font-bold text-center mb-8">
+        💰 補助金フル活用シミュレーション例
+      </h3>
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white/10 rounded-xl p-6">
+          <p class="text-blue-200 text-sm mb-2">導入設備</p>
+          <p class="text-xl font-bold">産業用蓄電池 500kWh</p>
+          <p class="text-blue-200 text-sm mt-1">太陽光100kW併設</p>
+        </div>
+        <div class="bg-white/10 rounded-xl p-6">
+          <p class="text-blue-200 text-sm mb-2">通常導入費用</p>
+          <p class="text-3xl font-bold text-yellow-300">約5,000万円</p>
+        </div>
+        <div class="bg-white/10 rounded-xl p-6">
+          <p class="text-blue-200 text-sm mb-2">補助金活用後の実質負担</p>
+          <p class="text-3xl font-bold text-green-300">約1,500万円</p>
+          <p class="text-blue-200 text-sm mt-1">▼ 最大70%削減</p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-4 gap-4 text-sm">
+        <div class="bg-white/10 rounded-lg p-4 text-center">
+          <p class="text-blue-200 text-xs mb-1">国（経産省）</p>
+          <p class="font-bold text-yellow-300 text-xl">1,500万円</p>
+          <p class="text-blue-200 text-xs">省エネ補助金</p>
+        </div>
+        <div class="bg-white/10 rounded-lg p-4 text-center">
+          <p class="text-blue-200 text-xs mb-1">広島県</p>
+          <p class="font-bold text-yellow-300 text-xl">1,000万円</p>
+          <p class="text-blue-200 text-xs">再エネ等導入補助</p>
+        </div>
+        <div class="bg-white/10 rounded-lg p-4 text-center">
+          <p class="text-blue-200 text-xs mb-1">市町村</p>
+          <p class="font-bold text-yellow-300 text-xl">500万円</p>
+          <p class="text-blue-200 text-xs">省エネ設備補助</p>
+        </div>
+        <div class="bg-white/10 rounded-lg p-4 text-center">
+          <p class="text-blue-200 text-xs mb-1">ものづくり補助</p>
+          <p class="font-bold text-yellow-300 text-xl">500万円</p>
+          <p class="text-blue-200 text-xs">グリーン枠</p>
+        </div>
+      </div>
+      <p class="text-center text-blue-200 text-xs mt-4">
+        ※ 補助金の組み合わせは条件によって異なります。詳細はお問い合わせください。
+      </p>
+    </div>
+
+    <!-- ============ 申請手順 ============ -->
+    <div class="mt-20">
+      <h3 class="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-4">
+        📋 広島電気が代行する補助金申請フロー
+      </h3>
+      <p class="text-center text-gray-500 mb-12">
+        複雑な手続きをすべてお任せください。採択率を最大化するノウハウがあります。
+      </p>
+
+      <div class="relative">
+        <!-- 縦線 -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-blue-200 hidden md:block"></div>
+
+        <div class="space-y-8">
+
+          <!-- STEP 1 -->
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="flex-1 md:text-right order-2 md:order-1">
+              <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-blue-600 md:border-l-0 md:border-r-4">
+                <p class="text-blue-600 font-bold text-sm mb-1">STEP 1 ｜ 無料ヒアリング・現地調査</p>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">電力使用状況と申請可能補助金を特定</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>✅ 直近12ヶ月の電気使用明細を分析</li>
+                  <li>✅ デマンドデータの確認（ピーク特定）</li>
+                  <li>✅ 申請可能な国・県・市の補助金をリストアップ</li>
+                  <li>✅ 最大補助金額の概算を提示</li>
+                </ul>
+                <p class="text-blue-600 font-bold text-sm mt-3">⏱ 所要日数：1〜3営業日</p>
+              </div>
+            </div>
+            <div class="relative z-10 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg order-1 md:order-2 flex-shrink-0">1</div>
+            <div class="flex-1 order-3 hidden md:block"></div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="flex-1 hidden md:block order-1"></div>
+            <div class="relative z-10 w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg order-1 md:order-2 flex-shrink-0">2</div>
+            <div class="flex-1 order-2 md:order-3">
+              <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-blue-700">
+                <p class="text-blue-700 font-bold text-sm mb-1">STEP 2 ｜ 申請書類の作成支援</p>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">採択率を上げる書類を広島電気が作成</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>✅ 省エネ計算書・CO₂削減効果の算定</li>
+                  <li>✅ 事業計画書・省エネ計画書の作成</li>
+                  <li>✅ 見積書・仕様書・配置図の整備</li>
+                  <li>✅ BCP計画書の策定サポート（必要な場合）</li>
+                  <li>✅ 過去の採択事例を参考にした書き方指導</li>
+                </ul>
+                <p class="text-blue-700 font-bold text-sm mt-3">⏱ 所要日数：1〜2週間</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="flex-1 md:text-right order-2 md:order-1">
+              <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-indigo-600 md:border-l-0 md:border-r-4">
+                <p class="text-indigo-600 font-bold text-sm mb-1">STEP 3 ｜ 申請・審査対応</p>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">窓口への提出から審査対応まで代行</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>✅ 国・県・市の窓口への書類提出</li>
+                  <li>✅ 審査期間中の追加資料対応</li>
+                  <li>✅ ヒアリング（審査員との面談）に同席</li>
+                  <li>✅ 複数補助金の同時申請スケジュール管理</li>
+                </ul>
+                <p class="text-indigo-600 font-bold text-sm mt-3">⏱ 審査期間：1〜3ヶ月（補助金による）</p>
+              </div>
+            </div>
+            <div class="relative z-10 w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg order-1 md:order-2 flex-shrink-0">3</div>
+            <div class="flex-1 order-3 hidden md:block"></div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="flex-1 hidden md:block order-1"></div>
+            <div class="relative z-10 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg order-1 md:order-2 flex-shrink-0">4</div>
+            <div class="flex-1 order-2 md:order-3">
+              <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-green-600">
+                <p class="text-green-600 font-bold text-sm mb-1">STEP 4 ｜ 交付決定後の設計・施工</p>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">補助金の条件を満たした施工を実施</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>✅ 補助金要件に準拠した設計図の作成</li>
+                  <li>✅ 認定設備・JIS規格品の選定</li>
+                  <li>✅ 自社施工による品質管理（外注なし）</li>
+                  <li>✅ 工事完了報告書の作成・提出</li>
+                </ul>
+                <p class="text-green-600 font-bold text-sm mt-3">⏱ 施工期間：2〜6週間（規模による）</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 5 -->
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="flex-1 md:text-right order-2 md:order-1">
+              <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-yellow-500 md:border-l-0 md:border-r-4">
+                <p class="text-yellow-600 font-bold text-sm mb-1">STEP 5 ｜ 補助金請求・完了報告</p>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">補助金の確実な受給をサポート</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>✅ 実績報告書・証憑書類の整理・提出</li>
+                  <li>✅ 補助金精算払い請求書の作成</li>
+                  <li>✅ 省エネ効果のモニタリング報告（義務期間中）</li>
+                  <li>✅ 翌年度以降の報告義務サポート</li>
+                </ul>
+                <p class="text-yellow-600 font-bold text-sm mt-3">💰 補助金入金まで：完了報告から1〜3ヶ月</p>
+              </div>
+            </div>
+            <div class="relative z-10 w-12 h-12 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg order-1 md:order-2 flex-shrink-0">5</div>
+            <div class="flex-1 order-3 hidden md:block"></div>
+          </div>
+
+          <!-- STEP 6 -->
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="flex-1 hidden md:block order-1"></div>
+            <div class="relative z-10 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg order-1 md:order-2 flex-shrink-0">6</div>
+            <div class="flex-1 order-2 md:order-3">
+              <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-purple-600">
+                <p class="text-purple-600 font-bold text-sm mb-1">STEP 6 ｜ 導入後サポート・次回補助金準備</p>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">長期的な電気代削減を継続的に支援</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>✅ 年1回の点検・メンテナンス</li>
+                  <li>✅ 電気代削減効果のレポート提供</li>
+                  <li>✅ 翌年度の新しい補助金情報をいち早く提供</li>
+                  <li>✅ 設備更新・増設時の追加補助金サポート</li>
+                </ul>
+                <div class="bg-purple-50 rounded-lg p-3 mt-3">
+                  <p class="text-purple-700 text-xs font-bold">🎯 広島電気との長期パートナーシップ</p>
+                  <p class="text-purple-600 text-xs mt-1">
+                    補助金は毎年新たに公募されます。1台目の実績を活かして
+                    2台目・増設の補助金採択率を高めることができます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-16 text-center">
+      <div class="bg-yellow-50 border border-yellow-300 rounded-2xl p-8 max-w-2xl mx-auto">
+        <p class="text-2xl font-bold text-gray-800 mb-2">
+          📩 まず「補助金診断」から始めませんか？
+        </p>
+        <p class="text-gray-600 mb-6">
+          御社が申請できる補助金の組み合わせと<br>
+          概算削減額を<strong class="text-blue-700">無料でシミュレーション</strong>します。
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:0822435821"
+            class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-full transition-all text-lg shadow-lg">
+            📞 082-243-5821
+          </a>
+          <a href="mailto:info@hiroshima-denki.co.jp"
+            class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-full transition-all text-lg shadow-lg">
+            ✉️ 無料補助金診断を申し込む
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- タブ切り替えスタイル・スクリプト -->
+<style>
+  .tab-btn {
+    background: #e2e8f0;
+    color: #4a5568;
+  }
+  .tab-btn:hover {
+    background: #bee3f8;
+    color: #2b6cb0;
+  }
+  .active-tab {
+    background: #1e40af !important;
+    color: white !important;
+    box-shadow: 0 4px 14px rgba(30, 64, 175, 0.4);
+  }
+</style>
+
+<script>
+  function showTab(tabName) {
+    // すべてのコンテンツを非表示
+    document.querySelectorAll('.tab-content').forEach(el => {
+      el.classList.add('hidden');
+    });
+    // すべてのボタンからアクティブを削除
+    document.querySelectorAll('.tab-btn').forEach(el => {
+      el.classList.remove('active-tab');
+    });
+    // 対象タブを表示
+    document.getElementById('tab-content-' + tabName).classList.remove('hidden');
+    // 対象ボタンをアクティブに
+    document.getElementById('tab-' + tabName).classList.add('active-tab');
+  }
+</script>
+
+
+    <section id="vision" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-blue-900 section-title">広島電気興業の強み</h3>
+                <p class="text-orange-500 font-bold mt-2 tracking-widest uppercase text-sm">Since 1957 Hiroshima Quality</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="space-y-8">
+                    <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm">
+                        <h4 class="text-xl font-bold text-blue-900 mb-4 flex items-center gap-3">
+                            <span class="bg-blue-900 text-white p-2 rounded-lg">実績</span>
+                            太陽光発電（高圧）年間10件超の施工
+                        </h4>
+                        <p class="text-gray-700 leading-loose">
+                            産業用太陽光発電の豊富な経験があるからこそ、蓄電池との連携（自家消費システム）において、トラブルの少ない最適な設計が可能です。
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm">
+                        <h4 class="text-xl font-bold text-blue-900 mb-4 flex items-center gap-3">
+                            <span class="bg-blue-900 text-white p-2 rounded-lg">資格</span>
+                            一級建築士・一級電気管理技士在籍
+                        </h4>
+                        <p class="text-gray-700 leading-loose">
+                            「ただ置くだけ」の工事はしません。建物の構造から電気系統の劣化状態まで、建築と電気の専門家が多角的に診断。30年後の資産価値を見据えます。
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="images/foto1.png" alt="現場写真1" class="rounded-2xl shadow-lg w-full h-80 object-cover transform hover:scale-105 transition duration-500">
+                    <img src="images/foto2.png" alt="現場写真2" class="rounded-2xl shadow-lg w-full h-80 object-cover mt-12 transform hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="company" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h3 class="text-3xl font-bold text-blue-900 section-title text-center mb-16">会社概要</h3>
+            <div class="overflow-hidden border-t border-gray-200">
+                <table class="w-full text-left border-collapse">
+                    <tbody>
+                        <tr class="border-b"><th class="py-5 px-6 bg-gray-50 w-1/3">会社名</th><td class="py-5 px-6 font-bold">広島電気興業株式会社</td></tr>
+                        <tr class="border-b"><th class="py-5 px-6 bg-gray-50">代表者</th><td class="py-5 px-6">代表取締役　勝部 信之</td></tr>
+                        <tr class="border-b"><th class="py-5 px-6 bg-gray-50">所在地</th><td class="py-5 px-6">〒730-0824 広島県広島市中区吉島新町２丁目３４－８</td></tr>
+                        <tr class="border-b"><th class="py-5 px-6 bg-gray-50">保有資格</th><td class="py-5 px-6 text-sm">
+                            1級電気工事施工管理技士 / 1級管工事施工管理技士 / 一級建築士 / 一種・二種電気工事士
+                        </td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-blue-900 text-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold mb-6">無料シミュレーション受付中</h3>
+                <p class="text-blue-100">
+                    現在の「電気明細書」を1年分ご用意ください。<br>
+                    蓄電池導入による正確な削減効果を無料でレポートいたします。
+                </p>
+            </div>
+
+            <form class="bg-white text-gray-900 p-10 rounded-3xl shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-bold mb-2">貴社名 / お名前</label>
+                        <input type="text" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-lg outline-none" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">メールアドレス</label>
+                        <input type="email" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-lg outline-none" required>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-bold mb-2">ご相談内容</label>
+                    <select class="w-full p-4 bg-gray-50 border border-gray-200 rounded-lg outline-none">
+                        <option>産業用蓄電池のシミュレーション希望</option>
+                        <option>太陽光発電＋蓄電池の導入相談</option>
+                        <option>補助金について詳しく聞きたい</option>
+                        <option>その他（メンテナンス等）</option>
+                    </select>
+                </div>
+                <div class="mb-8">
+                    <label class="block text-sm font-bold mb-2">メッセージ詳細</label>
+                    <textarea class="w-full p-4 bg-gray-50 border border-gray-200 rounded-lg h-32 outline-none" placeholder="現在のお悩みや、導入を検討されている施設の規模などをご記入ください"></textarea>
+                </div>
+                <button type="submit" class="w-full py-5 bg-orange-500 text-white font-black text-xl rounded-xl hover:bg-orange-600 transition shadow-lg">
+                    この内容で送信する
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-gray-900 text-center text-white">
+        <p class="font-bold tracking-[0.3em] uppercase mb-4">広島電気興業株式会社</p>
+        <p class="text-gray-500 text-[10px] tracking-[0.3em]">© 2026 HIROSHIMA DENKI KOGYO CO., LTD. ALL RIGHTS RESERVED.</p>
+    </footer>
+
 </body>
 </html>
